@@ -1,0 +1,587 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>WanderLust</title>
+
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"> 
+    <link rel="stylesheet" href="assets/font-awesome/css/">                
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">                                     
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    
+    
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark stroke">
+        <h1>
+          <a class="navbar-brand" href="index.html">
+            <span class="fa fas fa-plane"></span> WanderLust<span class="logo"> Travel the world! </span></a>
+        </h1>
+      <style>
+        .navbar-brand{
+          margin-bottom:-10px;
+        }
+      </style>
+  
+       
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </span>
+      </button>
+
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item @@about__active">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item @@services__active">
+              <a class="nav-link" href="top deals.html">Top Deals</a>
+            </li>
+            <li class="nav-item @@contact__active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          </div>
+  
+          <a href="loginsignup.html" title="click here to login"><span class="fas fa fa-user fa-lg"> </span> </a>
+          <style>
+            .fa-lg{
+              color:rgb(21, 158, 21);
+              margin-right: 15px;
+            }
+          </style>
+          <!--//search-right-->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> English</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown09">
+                  <a class="dropdown-item" href="#fr"><span class="flag-icon flag-icon-fr"> </span>  French</a>
+                  <a class="dropdown-item" href="#it"><span class="flag-icon flag-icon-it"> </span>  Italian</a>
+                  <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ru"> </span>  Russian</a>
+                  <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ne"> </span>  Dutch</a>
+                  <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-in"> </span>  Hindi</a>
+                  <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ch"> </span>  Swiss</a>
+                  <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-br"> </span>  Portugese</a>
+              </div>
+          </li>
+      </ul>
+          </ul>
+          <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+          
+          
+      </nav>
+
+    </div>
+  </header>
+  <!--/header-->
+
+<!-- hero slider Start -->
+<div class="tm-page-wrap mx-auto">
+    <section class="tm-banner">
+        <div class="tm-container-outer tm-banner-bg">
+            <div class="container">
+
+                <div class="row tm-banner-row tm-banner-row-header">
+                    <div class="col-xs-12">
+                        <div class="tm-banner-header">
+                            <h1 class="text-uppercase tm-banner-title"> New adventure awaits!</h1>
+                            <style>
+                                h1 { margin-top: 20px;
+                                  color:rgb(27, 161, 27);
+
+                                }
+                                
+                            </style>
+                            <p class="tm-banner-subtitle"> Choose your destination.</p>
+                            <a href="javascript:void(0)" class="tm-down-arrow-link" title="Go to the search form"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>  
+                              <style>
+                                .tm-banner-subtitle{
+                                  color:white;
+                                }
+                              </style>   
+                        </div>    
+                    </div>  <!-- col-xs-12 -->                      
+                </div> <!-- row -->
+                <div class="row tm-banner-row" id="tm-section-search">
+
+                    <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                        <div class="form-row tm-search-form-row">                                
+                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                <label for="inputCity">Choose Your Destination</label>
+                                <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination..." requiresd="most">
+                            </div>
+                            <div class="form-group tm-form-group tm-form-group-1">                                    
+                                <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                    <label for="inputRoom">Number of rooms</label>
+                                    <select name="room" class="form-control tm-select" id="inputRoom">
+                                        <option value="1" selected>1 Room</option>
+                                        <option value="2">2 Rooms</option>
+                                        <option value="3">3 Rooms</option>
+                                        <option value="4">4 Rooms</option>
+                                        <option value="5">5 Rooms</option>
+                                        <option value="6">6 Rooms</option>
+                                        <option value="7">7 Rooms</option>
+                                        <option value="8">8 Rooms</option>
+                                        <option value="9">9 Rooms</option>
+                                        <option value="10">10 Rooms</option>
+                                    </select>                                        
+                                </div>
+                                <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                    <label for="inputAdult">Adult</label>     
+                                    <select name="adult" class="form-control tm-select" id="inputAdult">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>                                        
+                                </div>
+                                <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                    <label for="inputChildren">Children</label>                                            
+                                    <select name="children" class="form-control tm-select" id="inputChildren">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>                                        
+                                </div>
+                            </div>
+                        </div> <!-- form-row -->
+                        <div class="form-row tm-search-form-row">
+
+                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                <label for="inputCheckIn">Check In Date</label>
+                                <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                            </div>
+                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                <label for="inputCheckOut">Check Out Date</label>
+                                <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                            </div>
+                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                <label for="btnSubmit">&nbsp;</label>
+                      
+                                <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                            </div>
+                        </div>                              
+                    </form>                             
+
+                </div> <!-- row -->
+                <div class="tm-banner-overlay"></div>
+            </div>  <!-- .container -->                   
+        </div>     <!-- .tm-container-outer -->                 
+    </section>
+
+    <section class="p-5 tm-container-outer tm-bg-gray">            
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                    <h2 class="text-uppercase mb-3"><strong>Who are we?</strong> </h2>
+                    <p class="mb-4">Since 2010, WanderLust has been committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders on the leisure travel side, and providing travelers best services to make their journey and travel experiences very amazing. </p>
+                    <a href="about.html" class="text-uppercase btn-primary tm-btn">Know more about us</a>
+                    <style>
+                      .mb-3{ 
+                        margin-bottom:-10px;
+
+                      }
+          
+                      .mb-3{
+                        margin-top:-10px;
+                      }
+                     
+                    </style>  
+    
+                            
+                </div>
+            </div>
+        </div>            
+    </section>
+    <section class="boxes">
+    <div class="tm-container-outer" id="tm-section-2">
+        <h2 class="text-uppercase mb-4">  <strong>Featured Destinations</strong></h2>
+        <style>
+            h2 {text-align: center;
+                margin-top:30px;
+                margin-bottom: 30px;
+            
+            }
+            </style>
+        <section class="tm-slideshow-section">
+            <div class="tm-slideshow">
+                <img src="assets/images/Paris1.jpg" alt="Image">
+                <img src="assets/images/paris5.jpg" alt="Image">
+                <img src="assets/images/eifel.jpg" alt="Image">    
+            </div>
+            <div class="tm-slideshow-description tm-bg-primary">
+                <h2 class="heading">Paris, France</h2>
+                <p>Paris, capital of France, is one of the most important and influential cities in the world. In terms of tourism, Paris is the second most visited city in Europe after London. In this travel guide, you’ll find out about the city’s top attractions, as well as useful travel advice on how to get to Paris and how to save money whilst traveling.</p>
+                <a href="index.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">More Details</a>
+                <a href="booking.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Book now</a>
+            </div>
+        </section>
+        <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+            <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                <img src="assets/images/greece1.jpg" alt="Image">
+                <img src="assets/images/greece2.jpg" alt="Image">
+                <img src="assets/images/greece4.jpg" alt="Image">
+            </div> 
+
+            <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                <h2 class="heading">Greece, Santiago</h2>
+                <p>Roam the peaceful black-sand beaches or wander the streets of a provincial village like Imerovigli. Beautiful Oia is world famous for its sunsets, which seem to dial through a kaleidoscope of colors before fading to starlight. Travel with us. You will not regret. You will have one of the best experiences of your life.
+                </p>
+                <a href="index.html" class="text-uppercase center tm-btn tm-btn-white tm-btn-white-primary">More Details</a>
+                <a href="booking.html" class="text-uppercase center tm-btn tm-btn-white tm-btn-white-primary">Book now</a>
+                <style>
+                    p{
+                        margin-bottom: 10px;
+                    }
+                    .heading{
+                      margin-top:-15px;
+                      margin-bottom:10px;
+                    }
+                </style>
+            </div>                        
+
+        </section>
+        <section class="tm-slideshow-section">
+            <div class="tm-slideshow">
+                <img src="assets/images/london1.jpg" alt="Image">
+                <img src="assets/images/london2.jpg" alt="Image">
+                <img src="assets/images/london1.jpg" alt="Image">
+            </div>
+            <div class="tm-slideshow-description tm-bg-primary">
+                <h2 class="heading">London, UK</h2>
+                <p>See world-famous London attractions, iconic landmarks and lesser-known sights. Whether exploring socially distanced indoor attractions or spacious outdoor spots, make sure you plan ahead. Most attractions require advanced booking for a timeslot, even if they’re free to enter.</p>
+                <a href="#" class="text-uppercase center tm-btn tm-btn-white tm-btn-white-primary">More Details</a>
+                <a href="#" class="text-uppercase center tm-btn tm-btn-white tm-btn-white-primary">Book now</a>
+                
+            </div>
+        </section>
+        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+    </div> 
+    <style>
+        .tm-d-table{
+          margin-top: 20px;
+          margin-bottom:25px;
+        }
+        
+        
+    </style>       
+    </section>
+   <style>
+     .boxes{
+      margin: 0 auto 0 auto;
+      max-width:1300px;
+     }
+   </style>
+    
+<!-- footer -->
+<footer class="w3l-footer-29-main">
+    <div class="footer-29 py-5">
+      <div class="container py-md-4">
+  
+        <div class="row footer-top-29">
+  
+          <div class="col-lg-4 col-md-6 footer-list-29 footer-1">
+            <div class="footer-logo mb-4">
+              <a class="navbar-brand" href="index.html">
+                <span class="fa fas fa-plane"></span> WanderLust<span class="logo">Travel the world!</span></a>
+            </div>
+            <p>“To travel is to live. live your life.”</p>
+            <div class="main-social-footer-29 mt-md-4 mt-3">
+              <a href="#facebook" class="facebook" title="facebook"><span class="fa fa-facebook"></span></a>
+              <a href="#twitter" class="twitter" title="twitter"><span class="fa fa-twitter"></span></a>
+              <a href="#instagram" class="instagram" title="instagram"><span class="fa fa-instagram"></span></a>
+              <a href="#linkedin" class="linkedin" title="linkedin"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5 mt-md-0 mt-5">
+            <p class="footer-title-29"> <strong> CONTACT INFO</strong> </p>
+            <p class="mb-2">Address : WanderLust, Newroad, Kathmandu, Nepal</p>
+            <p class="mb-2">Phone Number : 01123473</a></p>
+            <p class="mb-2">Email : WanderLust@gmail.com </a></p>
+          </div>
+  
+          <style>
+            .footer-title-29{
+              margin-bottom:20px;
+            }
+          </style>
+  
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
+            <p class="footer-title-29"> <strong> PAGES</strong> </p>
+            <ul class="footer">
+               <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="top deals.html">Top deals</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
+            <p class="footer-title-29"> <strong> NEED HELP?</strong> </p>
+             <ul class="footer">
+              <li><a href="about.html"> Help</a></li>
+              <li><a href="index.html#blog">Book now</a></li>
+              <li><a href="index.html#gallery">Our latest Gallery</a></li>
+              
+            </ul>
+          </div>
+
+        </div>
+  
+      </div>
+    </div>
+    <section class="w3l-copyright text-center">
+      <div class="container">
+        <p class="copy-footer-29">© 2021 WanderLust. All rights reserved. Design by Sahaja</a></p>
+      </div>
+  
+      <!-- move top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+        &#10548;
+      </button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+  
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+  
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- /move top -->
+    </section>
+  </footer>
+  <!-- //footer -->
+  
+  
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  
+  <!-- libhtbox -->
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <!-- libhtbox -->
+  
+  <!-- banner slick slider -->
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- //banner slick slider -->
+  
+  <!-- magnific popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+  
+        fixedContentPos: false,
+        fixedBgPos: true,
+  
+        overflowY: 'auto',
+  
+        closeBtnInside: true,
+        preloader: false,
+  
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+  
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+  
+        fixedContentPos: false,
+        fixedBgPos: true,
+  
+        overflowY: 'auto',
+  
+        closeBtnInside: true,
+        preloader: false,
+  
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
+  <!-- //magnific popup -->
+  
+  <!-- script for tesimonials carousel slider -->
+  <script src="assets/js/owl.carousel.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          768: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+  
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+  
+  <!-- Search -->
+  <script>
+    $('.control').click(function () {
+      $('body').addClass('search-active');
+      $('.input-search').focus();
+    });
+  
+    $('.icon-close').click(function () {
+      $('body').removeClass('search-active');
+    });
+  </script>
+  <!-- //Search -->
+  
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="assets/js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="assets/js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="assets/js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="assets/js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="assets/slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="assets/js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+       
+        
+
+        
+       
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+          
+    </script>             
+
+</body>
+</html>
+  
+  
